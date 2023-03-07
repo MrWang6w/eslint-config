@@ -1,0 +1,59 @@
+{
+  "editor.tabSize": 2,
+  "editor.stickyTabStops": true,
+  "prettier.singleQuote": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "eslint.enable": true,
+  // 每次保存的时候自动格式化
+  // "editor.formatOnSave": true,
+  // 保存时用eslint格式化
+  // "eslint.format.enable": true,
+  "eslint.run": "onType",
+  //用于指定在哪些类型的文件上运行 ESLint 检查
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue"
+  ],
+  //用于指定在哪些文件扩展名的文件上运行 ESLint 检查
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".vue",
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ]
+  },
+  "editor.codeActionsOnSave": {
+    //在保存文件时自动应用所有可用的代码修复操作
+    "source.fixAll": true,
+    //在保存文件时自动应用所有可用的 ESLint 代码修复操作
+    "source.fixAll.eslint": true
+  },
+  //控制在删除文件或文件夹时是否显示确认提示框
+  "explorer.confirmDelete": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "translator.captureWord": true,
+  "workbench.colorTheme": "Snazzy Operator",
+  "workbench.iconTheme": "eq-material-theme-icons",
+  //用于控制在移动文件时是否更新文件中的导入语句
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.ignoreRebaseWarning": true,
+  "workbench.editor.enablePreview": false,
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "jestrunner.configPath": "./node_modules/plm-public-base/jest.js",
+  "[less]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "html.format.unformatted": ""
+}
